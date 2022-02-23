@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".M001ActMain">
+
+    <TextView
+        android:id="@+id/tv_huyen"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/purple_500"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:text="@string/txt_app_name"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="#041F71"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+            <ProgressBar
+                android:id="@+id/pgb_cirle"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:indeterminateDrawable="@drawable/ic_rotate"
+                android:indeterminateDuration="10000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_bach_duong"
+                app:layout_constraintCircle="@id/pgb_cirle"
+                app:layout_constraintCircleAngle="0"
+                app:layout_constraintCircleRadius="130dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_bao_binh"
+                app:layout_constraintCircle="@id/pgb_cirle"
+                app:layout_constraintCircleAngle="30"
+                app:layout_constraintCircleRadius="130dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_bocap"
+                app:layout_constraintCircle="@id/pgb_cirle"
+                app:layout_constraintCircleAngle="60"
+                app:layout_constraintCircleRadius="130dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_cu_giai"
+                app:layout_constraintCircle="@id/pgb_cirle"
+                app:layout_constraintCircleAngle="90"
+                app:layout_constraintCircleRadius="130dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_kim_nguu"
+                app:layout_constraintCircle="@id/pgb_cirle"
+                app:layout_constraintCircleAngle="120"
+                app:layout_constraintCircleRadius="130dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_ma_ket"
+                app:layout_constraintCircle="@id/pgb_cirle"
+                app:layout_constraintCircleAngle="150"
+                app:layout_constraintCircleRadius="130dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_nhan_ma"
+                app:layout_constraintCircle="@id/pgb_cirle"
+                app:layout_constraintCircleAngle="180"
+                app:layout_constraintCircleRadius="130dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_song_ngu"
+                app:layout_constraintCircle="@id/pgb_cirle"
+                app:layout_constraintCircleAngle="210"
+                app:layout_constraintCircleRadius="130dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_song_tu"
+                app:layout_constraintCircle="@id/pgb_cirle"
+                app:layout_constraintCircleAngle="240"
+                app:layout_constraintCircleRadius="130dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_su_tu"
+                app:layout_constraintCircle="@id/pgb_cirle"
+                app:layout_constraintCircleAngle="270"
+                app:layout_constraintCircleRadius="130dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_thien_binh"
+                app:layout_constraintCircle="@id/pgb_cirle"
+                app:layout_constraintCircleAngle="300"
+                app:layout_constraintCircleRadius="130dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_xu_nu"
+                app:layout_constraintCircle="@id/pgb_cirle"
+                app:layout_constraintCircleAngle="330"
+                app:layout_constraintCircleRadius="130dp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>
